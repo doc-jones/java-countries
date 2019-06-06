@@ -11,7 +11,7 @@ public class Country {
     private int age;
 
     public Country(String cname, int population, int size, int age) {
-        this.id = counter.getAndIncrement();
+        this.id = counter.incrementAndGet();
         this.cname = cname;
         this.population = population;
         this.size = size;
@@ -24,5 +24,52 @@ public class Country {
         this.population = toClone.getPopulation();
         this.size = toClone.getSize();
         this.age = toClone.getAge();
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public String getCname() {
+        return cname;
+    }
+
+    public void setCname(String cname) {
+        this.cname = cname;
+    }
+
+    public int getPopulation() {
+        return population;
+    }
+
+    public void setPopulation(int population) {
+        this.population = population;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Country{" +
+                "id=" + id +
+                ", cname='" + cname + '\'' +
+                ", population=" + population +
+                ", size=" + size +
+                ", age=" + age +
+                '}';
     }
 }
