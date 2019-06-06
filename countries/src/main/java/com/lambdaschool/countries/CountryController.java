@@ -16,7 +16,7 @@ public class CountryController {
         return new ResponseEntity<>(CountriesApplication.ourCountryList.countryList, HttpStatus.OK);
     }
 
-    //  localhost:2019/
+    //  localhost:2019/data/country/2
 
 
 }
