@@ -1,7 +1,5 @@
 package com.lambdaschool.countries;
 
-import com.lambdaschool.countries.Country;
-
 import java.util.ArrayList;
 
 public class CountryList {
